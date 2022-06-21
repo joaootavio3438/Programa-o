@@ -1,0 +1,62 @@
+<script>
+//Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+//- até 280 (inclusive): aumento de 20%
+  //  - até 700 (inclusive): aumento de 15%
+  //  - até 1500 (inclusive): aumento de 10%
+  //  - acima de 1500: aumento de 5%
+//Informe: o preço atual, o percentual de aumento, o valor do aumento e o                            novo preço, todos com duas casas decimais.
+
+const precoAtual = Number(prompt("Preço atual:"))
+
+let acrescimo
+if(precoAtual <= 280){
+acrescimo = 20
+const precoatual = precoAtual
+const aumento = precoAtual * 0.20
+const precoFinal = precoAtual + aumento
+
+document.write(`</br>O preço atual é: R$${precoatual.toFixed(2)}`)
+document.write(`</br>O acréscimo é de: ${acrescimo.toFixed(2)}%`)
+document.write(`</br>O aumento é de: R$${aumento.toFixed(2)}`)
+document.write(`</br>O preço final é: R$${precoFinal.toFixed(2)}`)
+}else if (precoAtual <= 700 && precoAtual > 280){
+    acrescimo = 15
+const precoatual = precoAtual
+const aumento = precoAtual * 0.15
+const precoFinal = precoAtual + aumento
+
+document.write(`</br>O preço atual é: R$${precoatual.toFixed(2)}`)
+document.write(`</br>O acréscimo é de: ${acrescimo.toFixed(2)}%`)
+document.write(`</br>O aumento é de: R$${aumento.toFixed(2)}`)
+document.write(`</br>O preço final é: R$${precoFinal.toFixed(2)}`)
+
+
+}else if (precoAtual <= 1500 && precoAtual > 700){
+    acrescimo = 10
+const precoatual = precoAtual
+const aumento = precoAtual * 0.10
+const precoFinal = precoAtual + aumento
+
+document.write(`</br>O preço atual é: R$${precoatual.toFixed(2)}`)
+document.write(`</br>O acréscimo é de: ${acrescimo.toFixed(2)}%`)
+document.write(`</br>O aumento é de: R$${aumento.toFixed(2)}`)
+document.write(`</br>O preço final é: R$${precoFinal.toFixed(2)}`)
+
+
+}else if (precoAtual > 1500 ){
+    acrescimo = 5
+const precoatual = precoAtual
+const aumento = precoAtual * 0.05
+const precoFinal = precoAtual + aumento
+
+document.write(`</br>O preço atual é: R$${precoatual.toFixed(2)}`)
+document.write(`</br>O acréscimo é de: ${acrescimo.toFixed(2)}%`)
+document.write(`</br>O aumento é de: R$${aumento.toFixed(2)}`)
+document.write(`</br>O preço final é: R$${precoFinal.toFixed(2)}`)
+
+
+}
+
+
+</script>
+

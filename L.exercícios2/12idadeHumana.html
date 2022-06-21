@@ -1,0 +1,24 @@
+<script>
+//É sabido que os caẽs amadurecem mais rapidamente do que os seres humanos (na verdade, alguns seres humanos parecem nunca amadurecer).
+//Calcule a idade do seu cão, baseada nos seguintes fatores:
+  //  - cães de porte pequeno: fator 5
+ //- cães de porte médio: fator 6
+   // - cães grandes: fator 7.
+
+   const porte = (prompt("Informe o porte do cachorro:"))
+const idade = parseInt(prompt("Indique a idade do cachorro:"))
+
+
+if(porte ==  "pequeno") {
+const portePequeno = idade * 5
+document.write(`O seu cão tem ${portePequeno} anos em idade de cachorro`)
+}else if (porte == "médio"){
+ const porteMedio =  idade * 6
+ document.write(`O seu cão tem ${porteMedio} anos em idade de cachorro`)
+}else if (porte == "grande"){
+const porteGrande = idade * 7
+document.write(`O seu cão tem ${porteGrande} anos em idade de cachorro`)
+}
+
+
+</script>

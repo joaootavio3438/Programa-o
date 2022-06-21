@@ -1,0 +1,25 @@
+<script>
+//Escreva uma função que calcula o índice de massa corporal (imc = peso / altura ** 2),  de acordo com a seguinte tabela:
+//imc <= 18.5: "Subpeso"
+   // imc <= 25.0: "Normal"
+    //imc <= 30.0: "Sobrepeso"
+    //imc > 30: "Obeso"
+
+    const altura = Number(prompt("Informe sua altura em metros:"))
+        const peso = Number(prompt("Informe seu peso em kg:"))
+    
+        const imc = peso / altura ** 2
+         
+        if (imc <= 18.5) {
+            document.write(`Subpeso`)
+        } else if (imc > 18.5 && imc < 25) {
+            document.write(`Normal`)
+        } else if  (imc > 25 && imc < 30) {
+            document.write(`Sobrepeso`)
+        } else {
+            document.write(`Obeso`)
+        }
+
+
+
+</script>
